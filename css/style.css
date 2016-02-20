@@ -100,7 +100,11 @@ a {
 }
 
 .header-logo:hover {
-	background-color:#ca2c37;
+	background-color: #ca2c37;
+}
+
+.header-logo:active {
+	background-color: #ba2732;
 }
 
 .header-search {
@@ -1633,9 +1637,7 @@ a {
 	padding-right: 38px;
 	margin-top: 55px;
 	border-radius: 5px;
-	border-color: #e5e5e5;
-	border-width: 1px;
-	border-style: solid;
+	border: 1px solid #e5e5e5;
 	outline: none;
 	color: #000000;
 	background-color: #ffffff;
@@ -1646,6 +1648,14 @@ a {
 	font-weight: 400;
 	text-transform: uppercase;
 	text-decoration: none;
+}
+
+.catalog-panel-button:hover {
+	border: 1px solid #bdc6ca;
+}
+
+.catalog-panel-button:active {
+	border: 1px solid #ee3643;
 }
 
 /*-Правая панель каталога-*/
@@ -1928,6 +1938,14 @@ text-decoration: none;
 	text-align: center;
 	background-color: #ee3643;
 	box-shadow: #b52933 0 5px 0 0 ;		
+}
+
+.footer-logo:hover {
+	background-color: #ca2c37;
+}
+
+.footer-logo:active {
+	background-color: #ba2732;
 }
 
 .footer-menu-1 {	
