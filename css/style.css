@@ -209,6 +209,10 @@ a {
 	color: #ffffff;
 }
 
+.catalog-header-cart {
+	background-color: #ee3643;
+}
+
 .header-order {
 	float: right;
 	width: 150px;
@@ -1477,12 +1481,6 @@ a {
 	text-transform: uppercase;
 }
 
-/*-Центральный блок каталога-*/
-
-.catalog-container {
-
-}
-
 /*-Левая панель каталога-*/
 
 .catalog-checkbox-panel {
@@ -2002,9 +2000,9 @@ a {
 	margin-bottom: 25px;
 	font-family: "Cuprum",sans-serif,Arial;
 	font-size: 30px;
-	line-height: 30px;
+	line-height: 24px;
 	font-weight: 400;
-	color: #32425c;
+	color: #000000;
 	text-transform: uppercase;
 }
 
@@ -2023,11 +2021,11 @@ a {
   	padding: 0;
   	background-color: #32425c;
   	font-family: "Cuprum", sans-serif, Arial;
-font-size: 16px;
-line-height: 24px;
-font-weight: 400;
-color: #ffffff;
-text-decoration: none;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #ffffff;
+	text-decoration: none;
 
 }
 
