@@ -65,3 +65,34 @@ window.addEventListener("keydown", function (event) {
         }
     }
 });
+
+/*-Обработчик окна добавления товара в корзину-*/
+
+var CartNotificationWindow = document.querySelector(".cart-notification-window");
+var CartAddButton = document.querySelector(".product-item-buy");
+var CartNotificationClose = document.querySelector(".cart-notification-close-button");
+var CartNotificationContinueButton = document.querySelector(".cart-continue-button");
+
+
+CartAddButton.addEventListener("click", function (event) {
+    event.preventDefault(event);
+    CartNotificationWindow.classList.add("window-appearance");
+});
+
+CartNotificationClose.addEventListener("click", function (event) {
+    event.preventDefault(event);
+    CartNotificationWindow.classList.remove("window-appearance");
+});
+
+CartNotificationContinueButton.addEventListener("click", function (event) {
+    event.preventDefault(event);
+    CartNotificationWindow.classList.remove("window-appearance");
+});    
+
+window.addEventListener("keydown", function (event) {
+    if (event.keyCode == 27) {
+        if (CartNotificationWindow.classList.contains("window-appearance")) {
+            CartNotificationWindow.classList.remove("window-appearance");
+        }
+    }
+});
