@@ -20,7 +20,10 @@
 							<label class="icon-search" for="header-search"></label>				
 						</form>		
 					</div>			
-					<a class="header-bookmarks icon-bookmark" href="#">Закладки</a>	
+					<a class="header-bookmarks icon-bookmark" href="#">
+						Закладки:
+						<span class="header-bookmark-counter">0</span>
+					</a>	
 					<a class="header-cart icon-basket" href="#">
 						Корзина:
 						<span class="header-cart-counter">0</span>
@@ -44,11 +47,11 @@
 						</div>
 					</div>
 					<div class="header-user clearfix">
-						<a class="header-login" href="#">
-							<span class="icon-login"></span>
-							Войти
-						</a>
-						<a class="header-registration" href="#">Регистрация</a>
+						<a class="header-user-name" href="#">Равшан Джамшутович</a>
+						<div class="header-user-links">
+							<a class="header-user-link" href="#">Мои заказы</a>
+							<a class="header-user-link" href="#">Личный кабинет</a>
+						</div>
 					</div>
 				</div>			
 			</div>
@@ -96,34 +99,34 @@
 							</div>
 							<div class="catalog-price-inputs clearfix">
 								<input class="catalog-price-min" type="text" value="0">
-									<span>—</span>
+									<span>&mdash;</span>
 								<input class="catalog-price-max" type="text" value="30 000">
 							</div>
 						</div>
 						<h3 class="catalog-panel-title">Производители:</h3>
 
-			            <input name="bosch-checkbox" type="checkbox" value="bosch" checked>
+			            <input id="bosch-checkbox" name="bosch-checkbox" type="checkbox" value="bosch" checked>
 			            <label for="bosch-checkbox">Bosch</label>
 						
-						<input name="interskol-checkbox" type="checkbox" value="interskol">
+						<input id="interskol-checkbox" name="interskol-checkbox" type="checkbox" value="interskol">
 						<label for="interskol-checkbox">Интерскол</label>
 						
-						<input name="makita-checkbox" type="checkbox" value="makita" checked>
+						<input id="makita-checkbox" name="makita-checkbox" type="checkbox" value="makita" checked>
 						<label for="makita-checkbox">Makita</label>
 						
-						<input name="dewalt-checkbox" type="checkbox" value="dewalt">
+						<input id="dewalt-checkbox" name="dewalt-checkbox" type="checkbox" value="dewalt">
 						<label for="dewalt-checkbox">Dewalt</label>
 						
-						<input name="hitachi-checkbox" type="checkbox" value="hitachi">
+						<input id="hitachi-checkbox" name="hitachi-checkbox" type="checkbox" value="hitachi">
 						<label for="hitachi-checkbox">Hitachi</label>
 						
 		                <h3 class="catalog-panel-title catalog-range-filter-top">Питание:</h3>
 
-		                <input type="radio" name="rechargeable" checked>
-		                <label for="rechargeable">Аккумуляторные</label>
+		                <input type="radio" id="accumulators" name="power-source" checked>
+		                <label for="accumulators">Аккумуляторные</label>
 
-		                <input type="radio" name="rechargeable">
-		                <label for="rechargeable">Сетевые</label>
+		                <input type="radio" id="ac-adapters" name="power-source">
+		                <label for="ac-adapters">Сетевые</label>
 
 		                <button type="submit" class="catalog-panel-button">Показать</button>
 					</form>
