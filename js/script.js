@@ -69,15 +69,17 @@ window.addEventListener("keydown", function (event) {
 /*-Обработчик окна добавления товара в корзину-*/
 
 var CartNotificationWindow = document.querySelector(".cart-notification-window");
-var CartAddButton = document.querySelector(".product-item-buy");
+var CartAddButton = document.querySelectorAll(".product-item-buy");
 var CartNotificationClose = document.querySelector(".cart-notification-close-button");
 var CartNotificationContinueButton = document.querySelector(".cart-continue-button");
 
+for (i = 0; i < CartAddButton.length; ++i) {
 
-CartAddButton.addEventListener("click", function (event) {
-    event.preventDefault(event);
-    CartNotificationWindow.classList.add("window-appearance");
-});
+    CartAddButton[i].addEventListener("click", function (event) {
+        event.preventDefault(event);
+        CartNotificationWindow.classList.add("window-appearance");
+    })
+}
 
 CartNotificationClose.addEventListener("click", function (event) {
     event.preventDefault(event);
@@ -87,7 +89,7 @@ CartNotificationClose.addEventListener("click", function (event) {
 CartNotificationContinueButton.addEventListener("click", function (event) {
     event.preventDefault(event);
     CartNotificationWindow.classList.remove("window-appearance");
-});    
+}); 
 
 window.addEventListener("keydown", function (event) {
     if (event.keyCode == 27) {
@@ -96,3 +98,6 @@ window.addEventListener("keydown", function (event) {
         }
     }
 });
+
+
+  
