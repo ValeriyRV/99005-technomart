@@ -2249,17 +2249,18 @@ a {
 	color: #ffffff;
 }
 
-.map {
+.hover-map {
 	display: none;
-	z-index: 2000;
+	z-index: 2500;
 	position: fixed;
 	top: 50%;
 	left: 50%;
 	width: 940px;
-	height: 447px;
+	height: 446px;
 	margin-left: -470px;
 	margin-top: -230px;
 	box-shadow: 0 10px 25px #c4c3c4;
+	overflow: hidden;
 }
 
 .modal-window {
@@ -2414,4 +2415,16 @@ a {
 
 .modal-button-submit:active {
     background-color: #ba2732;
+}
+
+@keyframes bounce {
+    0% {transform: translateY(-2000px);}
+    70% {transform: translateY(30px);}
+    90% {transform: translateY(-10px);}
+    100% {transform: translateY(0);}
+}
+
+.window-appearance {
+	display: block;	
+	animation: bounce 0.6s;	
 }
