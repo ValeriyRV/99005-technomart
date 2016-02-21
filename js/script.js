@@ -29,6 +29,7 @@ var ModalWindow = document.querySelector(".modal-window");
 var CompanyFeedbackButton = document.querySelector(".company-feedback-button");
 var ModalWindowClose = document.querySelector(".modal-button-close");
 
+if (CompanyFeedbackButton != null && ModalWindowClose != null) {
 
 CompanyFeedbackButton.addEventListener("click", function (event) {
     event.preventDefault(event);
@@ -48,10 +49,14 @@ window.addEventListener("keydown", function (event) {
     }
 });
 
+}
+
 /*-Обработчик окна карты-*/
 
 var HoverMapWindow = document.querySelector(".hover-map");
 var HoverMapButton = document.querySelector(".company-contacts-map");
+
+if (HoverMapButton != null) {
 
 HoverMapButton.addEventListener("click", function (event) {
     event.preventDefault(event);
@@ -66,6 +71,7 @@ window.addEventListener("keydown", function (event) {
     }
 });
 
+}
 /*-Обработчик окна добавления товара в корзину-*/
 
 var CartNotificationWindow = document.querySelector(".cart-notification-window");
