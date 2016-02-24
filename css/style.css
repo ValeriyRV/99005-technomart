@@ -61,6 +61,7 @@ a {
 }
 /*-Блок header-*/
 
+
 .main-header {
 	padding-bottom: 60px;
 	margin-bottom: 22.5px;
@@ -68,11 +69,12 @@ a {
 }
 
 .index-header {
-	margin-bottom: 60px;
+	margin-bottom: 58px;
 }
   
 .header-top-panel {	
 	background-color: #293449;	
+	min-height: 42px;
 	margin-bottom: 46px;	
 }
 
@@ -117,7 +119,7 @@ a {
 	font-size: 17px;
 	padding: 0 12px;
 	position: absolute;
-	top: 9px;
+	top: 10px;
 	left: 0;
 }
 
@@ -152,8 +154,10 @@ a {
 
 .header-bookmarks {
 	float: left;
-	width: 150px;
-	padding: 13px 0;
+	position: relative;
+	width: 140px;
+	padding: 13px 0px 13px 10px;
+
 	font-size: 17px;
 	line-height: 18px;
 	font-family: "Cuprum", sans-serif, Arial;	
@@ -168,14 +172,11 @@ a {
 }
 
 
-.icon-bookmark {
-	padding-right: 0;
-}
-
 .icon-bookmark::before { 
-	content: "🔖"; 
-	padding-right: 12px;
+	position: absolute;
+	content: "🔖";	
 	color: #81868f;	
+	left: 10px;
 }
 
 .header-bookmarks:hover::before {
@@ -184,8 +185,8 @@ a {
 
 .header-cart {
 	float: left;	
-	width: 150px;
-	padding: 13px 0;
+	width: 110px;
+	padding: 13px 0 13px 10px;
 	font-size: 17px;
 	line-height: 18px;
 	font-family: "Cuprum", sans-serif, Arial;	
@@ -199,9 +200,13 @@ a {
 	background-color: #161d29;
 }
 
-.icon-basket::before { 
-	content: "\62";
-	padding-right: 12px;
+.icon-basket {
+	padding-right: 30px;
+}
+
+.icon-basket::before {
+	padding-right: 10px; 
+	content: "\62";	
 	color: #81868f;
 }
 
@@ -233,7 +238,7 @@ a {
 /*-Центральная часть header-*/
 
 .header-middle-panel {
-	margin-bottom: 37px;
+	margin-bottom: 40px;
 }
 
 .header-about {
@@ -246,6 +251,7 @@ a {
 	color: #ee3643;
 	margin-left: 50px; 
 }
+
 .header-contacts {
 	float: left;
 	margin-left: 70px; 
@@ -257,7 +263,7 @@ a {
 	font-family: "Cuprum", sans-serif, Arial;
 	font-size: 21px;
 	line-height: 18px;
-	padding: 8px 55px;	
+	padding: 8px 50px 10px 70px;	
 	color: #e9292a;
 }
 
@@ -272,10 +278,11 @@ a {
 }
 
 .header-contacts .header-address {
-	margin-top: 10px;
+	margin-top: 5px;
 	font-family: "Cuprum", sans-serif, Arial;
 	font-size: 14px;
-	line-height: 18px;
+	line-height: 24px;
+	text-align: center;
 	color: #32425c;
 }
 
@@ -287,11 +294,12 @@ a {
 .header-login {
 	display: inline-block;
 	position: relative;	
-	margin-right: 10px;	
-	padding-top: 14px;
-	padding-bottom: 15px;
-	padding-left: 48px;
-	padding-right: 27px;
+	margin-right: 5px;
+	margin-left: 15px;		
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 50px;
+	padding-right: 25px;
 	color: #000000;
 	background-color: #ffffff;	
 	text-decoration: none;
@@ -324,10 +332,10 @@ a {
 	color: #c5c5c5;
 }
 
-.header-registration {
+.header-registration {	
 	margin-right: 0;
-	padding-top: 14px;
-	padding-bottom: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	padding-left: 25px;
 	padding-right: 25px;
 	background-color: #ffffff;
@@ -412,12 +420,7 @@ a {
 	color: #c5c5c5;
 }
 
-/*
-.header-user-name:hover {
-	color: #eee000;
-}
 
-*/
 .header-user-links {
 	padding-top: 9px;
 	font-size: 0;
@@ -512,6 +515,10 @@ a {
 }
 
 .catalog-item {
+	font-family: "Cuprum", sans-serif, Arial;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
 }
 
 .catalog-materials {
@@ -553,7 +560,7 @@ a {
 
 .catalog-vehicles {
 	position: relative;
-	float: right;
+	float: right;	
 	width: 300px;
 	min-height: 123px;
 	background: #cc79d1 url("../img/catalog-vehicles-img.png") no-repeat 82% center;
@@ -809,13 +816,25 @@ a {
 .popular-block {
 	display: block;
 	background-color: #f7f3ec;
-	padding: 25px 0;
+	padding: 30px 0 30px 0;
 	margin-bottom: 18px;	  
 }
 
-.popular-description {	
+
+.popular-description-1 {	
 	width: 480px;
 	margin-left: 30px;
+	font-family: "Cuprum", sans-serif, Arial;
+	font-size: 30px;
+	line-height: 30px;
+	font-weight: 400;
+	color: #32425c;
+	text-transform: uppercase;
+}
+
+.popular-description-2 {	
+	width: 480px;
+	margin-left: 25px;
 	font-family: "Cuprum", sans-serif, Arial;
 	font-size: 30px;
 	line-height: 30px;
@@ -1001,7 +1020,7 @@ a {
 	line-height: 18px;
 	font-weight: 700;
 	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-bottom: 0px;
 	margin-bottom: 7.5px;
 }
 
@@ -1012,6 +1031,7 @@ a {
 	width: 122px;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	margin-left: 40px;
 	margin-bottom: 20px;
 	background-color: #ee3643;
 	border-top-left-radius: 5px;
@@ -1051,13 +1071,14 @@ a {
 }
 
 .brands-logo {
-	float: left;
-	width: 210px;
-	height: 140px;
+	/*float: left;*/
+	box-sizing: border-box;
+	width: 220px;
+	height: 145px;
 	display: inline-block;
 	vertical-align: top;
-	margin-right: 23px;
-	margin-bottom: 23px;
+	margin-right: 20px;
+	margin-bottom: 20px;
 	border: 1px solid #e5e5e5;
 }
 
@@ -1074,23 +1095,23 @@ a {
 	opacity: 0.5;
 }
 
-.brands-logo:nth-child(4) {
+.brands-logo:nth-child(4n) {
     margin-right: 0;
 }
 
 /*--Сервис--*/
 
 .service {
-	padding-top: 64px;
+	padding-top: 45px;
 	background-color: #f2f6f8;
 }
 
 .service-info {
-	margin-bottom: 65px;
+	margin-bottom: 67px;
 }
 
 .service-info-title {
-	margin-bottom: 25px;
+	margin-bottom: 26px;
 	color: #000000;
 	font-family: "Cuprum", sans-serif, Arial;
 	font-size: 30px;
@@ -1121,7 +1142,7 @@ a {
 .service-menu-column ul:before {
 	position: absolute;
 	content: "";
-    top: -27px;
+    top: -35px;
     right: 0;
     width: 10px;
     min-height: 272px;
@@ -1131,7 +1152,7 @@ a {
 .service-menu-column a {
 	display: block;
 	box-sizing: border-box;
-	height: 60px;	
+	height: 62px;	
 	padding-top: 16px;
 	padding-bottom: 18px;
 	padding-left: 24px;
@@ -1170,11 +1191,12 @@ a {
 	display: none;
 	float: right;
 	width: 620px;
-	min-height: 284px;
+	min-height: 284px;	
 }
 
 .service-details-name {
-	margin-bottom: 26px;
+	margin-top: 0px;
+	margin-bottom: 25px;
 	color: #32425c;
 	font-family: "Cuprum", sans-serif, Arial;
 	font-size: 36px;
@@ -1204,7 +1226,7 @@ a {
 	
 }
 
-.service-warranty-text {
+.service-warranty-text {	
     width: 370px;
     color: #000000;
     font-family: "PT Sans", sans-serif, Arial;
@@ -1218,8 +1240,8 @@ a {
 	content: "";
     width: 465px;
     height: 285px;
-    bottom: 0;
-    right: 0;
+    bottom: 20px;
+    right: -30px;
     background: url("../img/service-warranty-bg.png") no-repeat 50px 25px;
     z-index: 0;
 }
@@ -1242,8 +1264,8 @@ a {
 	content: "";
     width: 389px;
     height: 283px;
-    bottom: 0;
-    right: 0;
+    bottom: 24px;
+    right: -35px;
     background: url("../img/service-credit-bg.png") no-repeat -85px 25px;
     z-index: 0;
 }
@@ -1274,11 +1296,12 @@ a {
 	font-weight: 400;
 }
 
+
 /*-Компания-*/
 
 .company {
-	padding-top: 85px;
-	padding-bottom: 86px;
+	padding-top: 55px;
+	padding-bottom: 88px;
 }
 
 .company-left-column {
@@ -1297,8 +1320,18 @@ a {
 	text-transform: uppercase;
 }
 
-.company-slogan-content {
+.company-slogan-content-1 {
 	width: 520px;
+	margin-bottom: 23px;
+	font-family: "PT Sans", sans-serif, Arial;
+	font-size: 13px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #000000;
+}
+
+.company-slogan-content-2 {
+	width: 420px;
 	margin-bottom: 23px;
 	font-family: "PT Sans", sans-serif, Arial;
 	font-size: 13px;
@@ -1384,6 +1417,7 @@ a {
 
 .company-feedback-button {
 	display: block;
+	width: 300px;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	margin-right: 24px;
@@ -1403,6 +1437,7 @@ a {
 
 .catalog-breadcrumbs {
 	position: relative;
+	margin-top: -3px;
 	margin-left: 15px;
 	margin-bottom: 22.5px;
 	font-size: 0;
@@ -1415,6 +1450,7 @@ a {
 .catalog-breadcrumbs li {	
 	position: relative;
 	display: inline-block;
+	vertical-align: middle;
 	margin-left: 39px;
 }
 
@@ -1510,16 +1546,18 @@ a {
 	font-size: 17px;
 	line-height: 30px;
 	font-weight: 700;
-	margin-bottom: 14.5px;
+	margin-top: 10px;
+	margin-bottom: 17px;
 	color: #000000;
 	text-decoration: none;
 	text-transform: uppercase;
 }
 
+
 .catalog-range-filter {
 	font-size: 0;
 	padding-bottom: 25px;
-	margin-bottom: 16.5px;
+	margin-bottom: 20px;
 	border-bottom-style: solid;
 	border-bottom-width: 2px;
 	border-bottom-color: #e5e5e5;
@@ -1531,6 +1569,7 @@ a {
 	padding-top: 39px;
 	padding-left: 20px;
 	padding-right: 20px;
+	margin-top: -2px;
 	margin-bottom: 9px;
 	background-color: #f7f3ec;
 	border-radius: 5px;
@@ -1691,7 +1730,7 @@ a {
 }
 
 .catalog-range-filter-top {
-	padding-top: 19.5px;
+	padding-top: 15px;
 	border-top-style: solid;
 	border-top-width: 2px;
 	border-top-color: #e5e5e5;
@@ -1739,11 +1778,11 @@ a {
 }
 
 .catalog-panel-button {
-	padding-top: 11.5px;
-	padding-bottom: 10.5px;
-	padding-left: 38px;
-	padding-right: 38px;
-	margin-top: 55px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 42px;
+	padding-right: 42px;
+	margin-top: 57px;
 	border-radius: 5px;
 	border: 1px solid #e5e5e5;
 	outline: none;
@@ -1915,6 +1954,7 @@ a {
 
 .catalog-page-switcher {
 	font-size: 0;
+	margin-top: 30px;	
 	margin-bottom: 60px;
 }
 
@@ -1942,7 +1982,7 @@ a {
 	padding-top: 9.5px;
 	padding-bottom: 10px;
 	padding-left: 15px;
-	padding-right: 16px;
+	padding-right: 14px;
 	margin-right: 10px;
 	border-radius: 5px;
 	border: 1px solid #e5e5e5;
@@ -1963,11 +2003,11 @@ a {
 	border: 1px solid #ee3643;
 }
 
-.catalog-button-next-page {
+.catalog-page-switcher .catalog-button-next-page {
 	padding-top: 9.5px;
 	padding-bottom: 10px;
-	padding-left: 31px;
-	padding-right: 31px;
+	padding-left: 30px;
+	padding-right: 30px;
 	margin-right: 10px;
 	border-radius: 5px;
 	border: 1px solid #e5e5e5;
@@ -1997,7 +2037,8 @@ a {
 }
 
 .perforators-title {
-	margin-bottom: 25px;
+	margin-top: 0px;
+	margin-bottom: 30px;
 	font-family: "Cuprum",sans-serif,Arial;
 	font-size: 30px;
 	line-height: 24px;
@@ -2017,7 +2058,7 @@ a {
 /*-Блок footer-*/
 
 .main-footer {
-	margin: 0;
+	margin: 0px;
   	padding: 0;
   	background-color: #32425c;
   	font-family: "Cuprum", sans-serif, Arial;
@@ -2033,7 +2074,7 @@ a {
 	position: relative;
 	float: left;	
 	width: 220px;
-	padding: 20px 0;
+	padding: 16px 0 16px 0;
 	font-size: 30px;
 	line-height: 30px;	
 	font-family: "Cuprum", sans-serif, Arial;
@@ -2064,7 +2105,7 @@ a {
 
 .footer-menu-1 a {
 	display: block;
-	margin-top: 12px;
+	margin-top: 7px;
 	color: #ffffff;
 	padding-top: 30px;
 	padding-left: 60px;
@@ -2085,13 +2126,14 @@ a {
 }
 
 .footer-panel-middle {		
-	margin-top: 30px;
+	margin-top: 33px;
 	margin-bottom: 50px;
 }	
 
 .footer-address {
 	float: left;
 	width: 340px;
+	margin-left: 2px;
 }
 
 .footer-address p {
@@ -2145,7 +2187,8 @@ a {
 
 .footer-menu-social {
 	float: left;
-	margin-left: 160px;
+	margin-left: 150px;
+	margin-right: 10px;
 	width: 150px;	
 	font-size: 0;
 	text-align: center;
@@ -2223,6 +2266,7 @@ a {
 	float: left;
 	width: 100px;
 	margin-left: 100px;
+	margin-right: 10px;
 	font-size: 16px;
 	line-height: 18px;
 	color: #ffffff;		
@@ -2243,7 +2287,7 @@ a {
 
 .footer-developer {
 	float: right;
-	width: 100px;
+	width: 110px;	
 	font-size: 16px;	
 	line-height: 18px;
 	color: #ffffff;
